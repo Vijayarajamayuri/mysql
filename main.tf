@@ -90,7 +90,7 @@ resource "azurerm_mysql_flexible_server" "default" {
   version                      = "8.0.21"
 
   high_availability {
-    mode                      = "SameZone"
+    mode                      = "ZoneRedundant"
   }
   maintenance_window {
     day_of_week  = 0
